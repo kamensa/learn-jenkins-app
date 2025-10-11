@@ -12,8 +12,6 @@ pipeline {
             steps {
                 sh '''
                     ls -la
-                    rm package-lock.json
-                    npm install
                     node --version
                     npm --version
                     npm ci
