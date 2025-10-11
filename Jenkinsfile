@@ -15,6 +15,7 @@ pipeline {
                     node --version
                     npm --version
                     npm ci
+                    chmod -R 777 node_modules
                     npm run build
                     ls -la
                 '''
