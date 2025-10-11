@@ -17,8 +17,9 @@ pipeline {
                     node --version
                     npm --version
                     npm ci
-                    #npm run build
-                    ls -la node_modules/react-scripts/bin
+                    chown -R root:root .
+                    npm run build
+                    ls -la
                 '''
             }
         }
