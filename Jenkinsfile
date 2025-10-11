@@ -14,8 +14,8 @@ pipeline {
                     ls -la
                     node --version
                     npm --version
+                    rm package-lock.json
                     npm ci
-                    chmod -R 777 node_modules
                     npm run build
                     ls -la
                 '''
