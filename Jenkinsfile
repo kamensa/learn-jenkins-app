@@ -11,7 +11,7 @@ pipeline {
             }
             steps {
                 sh '''
-                    chmod -R 777 node_modules
+                    sudo chmod -R 777 node_modules
                     ls -la
                     node --version
                     npm --version
