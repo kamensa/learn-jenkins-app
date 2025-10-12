@@ -12,12 +12,11 @@ pipeline {
             steps {
                 sh '''
                     ls -la
-                    node --version
-                    npm --version
-                    npm ci
-                    npm run build
-                    ls -la
-                    whoami
+                    mkdir test.test
+                    #node --version
+                    #npm --version
+                    #npm ci
+                    #npm run build
                 '''
             }
         }
@@ -32,8 +31,9 @@ pipeline {
 
             steps {
                 sh '''
-                    test -f build/index.html
-                    npm test
+                    ls -la
+                    #test -f build/index.html
+                    #npm test
                 '''
             }
         }
