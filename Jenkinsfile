@@ -6,11 +6,12 @@ pipeline {
             agent {
                 docker {
                     image 'node:18-alpine'
-                    reuseNode false
+                    reuseNode true
                 }
             }
             steps {
                 sh '''
+                    chmod -R 777 node_modules
                     ls -la
                     node --version
                     npm --version
@@ -25,7 +26,7 @@ pipeline {
             agent {
                 docker {
                     image 'node:18-alpine'
-                    reuseNode false
+                    reuseNode true
                 }
             }
 
