@@ -6,7 +6,7 @@ pipeline {
             agent {
                 docker {
                     image 'node:18-alpine'
-                    args '-u root:root'
+                    aargs '-e HOME=/tmp/home'
                     reuseNode true
                 }
             }
@@ -26,7 +26,7 @@ pipeline {
             agent {
                 docker {
                     image 'node:18-alpine'
-                    args '-u root:root'
+                    args '-e HOME=/tmp/home'
                     reuseNode true
                 }
             }
