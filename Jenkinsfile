@@ -6,7 +6,7 @@ pipeline {
             agent {
                 docker {
                     image 'node:18-alpine'
-                    reuseNode false
+                    reuseNode true
                 }
             }
             steps {
@@ -17,6 +17,7 @@ pipeline {
                     npm ci
                     #npm run build
                     ls -la
+                    whoami
                 '''
             }
         }
@@ -25,7 +26,7 @@ pipeline {
             agent {
                 docker {
                     image 'node:18-alpine'
-                    reuseNode false
+                    reuseNode true
                 }
             }
 
