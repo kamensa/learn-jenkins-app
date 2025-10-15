@@ -15,8 +15,8 @@ pipeline {
                     #mkdir test.test
                     #node --version
                     #npm --version
-                    npm install -g --unsafe-perm=true --allow-root
-                    npm run build
+                    sudo npm install -g --unsafe-perm=true --allow-root
+                    sudo npm run build
                 '''
             }
         }
