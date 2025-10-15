@@ -12,11 +12,12 @@ pipeline {
             steps {
                 sh '''
                     ls -la
+                    which npm
                     #mkdir test.test
                     #node --version
                     #npm --version
-                    npm ci react-scripts --save
-                    npm run build
+                    #npm ci react-scripts --save
+                    #npm run build
                 '''
             }
         }
