@@ -14,9 +14,8 @@ pipeline {
                     ls -la
                     #mkdir test.test
                     #node --version
-                    npm install react-scripts --save
                     #npm --version
-                    #npm ci
+                    npm ci react-scripts --save
                     npm run build
                 '''
             }
