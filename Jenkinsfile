@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh '''
                     ls -la
-                    which npm
+                    ls -al /usr/local/bin/npm
                     #mkdir test.test
                     #node --version
                     #npm --version
