@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh '''
                     ls -la
-                    ls -al /usr/local/bin/npm
+                    ls -al /usr/local/lib/node_modules/npm/bin/npm-cli.js
                     #mkdir test.test
                     #node --version
                     #npm --version
