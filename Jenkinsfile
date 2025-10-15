@@ -12,12 +12,11 @@ pipeline {
             steps {
                 sh '''
                     ls -la
-                    ls -al /usr/local/lib/node_modules/npm/bin/npm-cli.js
                     #mkdir test.test
                     #node --version
                     #npm --version
-                    #npm ci react-scripts --save
-                    #npm run build
+                    npm ci -g --unsafe-perm=true --allow-root
+                    npm run build
                 '''
             }
         }
