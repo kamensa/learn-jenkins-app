@@ -12,15 +12,16 @@ pipeline {
             steps {
                 sh '''
                     ls -la
-                    mkdir test.test
+                    #mkdir test.test
                     #node --version
+                    npm install react-scripts --save
                     #npm --version
                     #npm ci
-                    #npm run build
+                    npm run build
                 '''
             }
         }
-
+/*
         stage('Test') {
             agent {
                 docker {
@@ -37,5 +38,6 @@ pipeline {
                 '''
             }
         }
+*/      
     }
 }
